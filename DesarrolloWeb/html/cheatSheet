@@ -148,6 +148,7 @@
     <p>Nos permite insertar una imagen en el documento.</p>
 
     <p>Por ejemplo: </p>
+    <img src="montaña.jpg">
 
     <h2>br</h2>
     <p>Esta etiqueta produce un salto de línea en el texto.</p>
