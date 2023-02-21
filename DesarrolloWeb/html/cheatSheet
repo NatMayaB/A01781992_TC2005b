@@ -2,29 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>HTML Cheat Sheet</title>
-</head>
-<body>
-    <h1>HTML Cheat  Sheet</h1>
-    <h2>a -Hyperlinks</h2>
-    <p>Sirven para hacer un link de una página a otro recurso en la web,  sea otro archivo en el servidor web, u otra página web.</p>
-
-    <p>Por ejemplo: <a href="https://tinyurl.com/4wnrkkzx">El siguiente link muestra un video de c&oacute;mo funcionan los hyperlinks!</a></p>
-
-    <h2>p -Párrafos</h2>
-    <p>Sirven para  para distribuir el texto en párrafos.</p>
-
-    <p>Por ejemplo: Este es un ejemplo de párrafo.</p>
-
-    <h2>h1..h6 -Headers</h2>
-    <p>Se utiliza para definir los títulos de una página web.</p>
-    <p>Por ejemplo:</p>
-    <h1>This is heading1</h1>
-    <h2>This i…
-[14:41, 16/02/2023] Nat: <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
     <title>HTML Cheat Sheet</title> 
 </head>
 <body>
