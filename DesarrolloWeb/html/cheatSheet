@@ -80,6 +80,8 @@
     <p>Representa un grupo de ayudas introductorias o de navegación. Puede contener algunos elementos de encabezado, así como también un logo, un formulario de búsqueda, un nombre de autor y otros componentes.</p>
 
     <p>Por ejemplo: </p>
+    <header>Header</header>
+    
 
     <h2>Section</h2>
     <p>Nos permite representar una sección genérica de un documento. Sirve para determinar qué contenido corresponde a qué parte de un esquema, es decir, su funcionalidad principal es estructurar semánticamente un documento.</p>
