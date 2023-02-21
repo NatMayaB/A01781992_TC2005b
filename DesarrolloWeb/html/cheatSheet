@@ -103,6 +103,30 @@
         <article class="sneakers">
             <h2>Converse chuck taylor</h2>
             <p>Converse</p>
+            <style type="text/css">
+            .Sneakers1 {
+                margin: 0;
+                padding: 0.3rem;
+                background-color: #5cdb5860;
+                font: 1rem 'Fira Sans', sans-serif;
+            }
+            
+            .Sneakers1 > h1,
+            .sneakers {
+                margin: 0.5rem;
+                padding: 0.3rem;
+                font-size: 1.2rem;
+            }
+            
+            .sneakers {
+                background: right/contain content-box border-box no-repeat rgba(73, 116, 71, 0.151);
+            }
+            
+            .sneakers > h2,
+            .sneakers > p {
+                margin: 0.2rem;
+                font-size: 1rem;
+            } </style>
         </article>
     </article>
 
@@ -160,8 +184,15 @@
         <tr>
             <td>Natalia</td>
             <td>Maya</td>
-        </tr>
+        </tr>  
+        <style type="text/css">
+        table, td {
+            border: 1px solid black;
+        } </style>
     </table>
+
+
+
 
     <h2>ul</h2>
     <p>Esta etiqueta nos permite  crear una lista no ordenada.</p>
