@@ -167,12 +167,13 @@
     <p>Nos permite insertar una sección de documento que contiene controles interactivos que permiten a un usuario enviar información a un servidor web.</p>
 
     <p>Por ejemplo:</p>
-    <h1>Suscríbete </h1>
+    <h4>Suscríbete </h4>
 <form method="get">
+    
 Mail: <input type="text" name="email" id="email" >
 <br>
 <br>
-<input type="submit" value="Inscríbeme!"> <input type="reset">
+<input type="submit" value="Inscríbeme!">  <input type="reset">
 </form>
 
     <h2>table</h2>
