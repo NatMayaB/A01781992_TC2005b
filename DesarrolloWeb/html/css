@@ -1,23 +1,23 @@
-.forecast {
+.Sneakers {
     margin: 0;
     padding: 0.3rem;
     background-color: #eee;
     font: 1rem 'Fira Sans', sans-serif;
 }
 
-.forecast > h1,
-.day-forecast {
+.Sneakers > h1,
+.sneakers {
     margin: 0.5rem;
     padding: 0.3rem;
     font-size: 1.2rem;
 }
 
-.day-forecast {
+.sneakers {
     background: right/contain content-box border-box no-repeat url('/media/examples/rain.svg') white;
 }
 
-.day-forecast > h2,
-.day-forecast > p {
+.sneakers > h2,
+.sneakers > p {
     margin: 0.2rem;
     font-size: 1rem;
 }
