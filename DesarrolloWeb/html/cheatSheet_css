@@ -1,7 +1,7 @@
 .Sneakers1 {
     margin: 0;
     padding: 0.3rem;
-    background-color: #eeeeee60;
+    background-color: #5cdb5860;
     font: 1rem 'Fira Sans', sans-serif;
 }
 
@@ -13,7 +13,7 @@
 }
 
 .sneakers {
-    background: right/contain content-box border-box no-repeat rgba(255, 255, 255, 0.151);
+    background: right/contain content-box border-box no-repeat rgba(73, 116, 71, 0.151);
 }
 
 .sneakers > h2,
