@@ -1,11 +1,11 @@
-.Sneakers {
+.Sneakers1 {
     margin: 0;
     padding: 0.3rem;
     background-color: #eeeeee60;
     font: 1rem 'Fira Sans', sans-serif;
 }
 
-.Sneakers > h1,
+.Sneakers1 > h1,
 .sneakers {
     margin: 0.5rem;
     padding: 0.3rem;
@@ -13,7 +13,7 @@
 }
 
 .sneakers {
-    background: right/contain content-box border-box no-repeat url('/media/examples/rain.svg') rgba(255, 255, 255, 0.151);
+    background: right/contain content-box border-box no-repeat rgba(255, 255, 255, 0.151);
 }
 
 .sneakers > h2,

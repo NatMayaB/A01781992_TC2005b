@@ -90,8 +90,8 @@
     <p>Nos permite representar una composición auto-contenida en un documento, una página, una aplicación o en un sitio, que se quiere que sea distribuíble y/o reutilizable de manera independiente.</p>
 
     <p>Por ejemplo:</p>
-    <article class="Sneakers">
-        <h1>Sneakers-collection</h1>
+    <article class="Sneakers1">
+        <h1>Sneakers collection</h1>
         <article class="sneakers">
             <h2>New balance 550</h2>
             <p>New balance</p>
@@ -101,7 +101,7 @@
             <p>Adidas</p>
         </article>
         <article class="sneakers">
-            <h2>Converse-chuck-taylor</h2>
+            <h2>Converse chuck taylor</h2>
             <p>Converse</p>
         </article>
     </article>
