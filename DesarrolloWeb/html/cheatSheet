@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<lang lang="en">
+<head class="headertittle">
     <meta charset="utf-8">
     <title>HTML Cheat Sheet</title> 
 </head>
-<body>
+</lang>
     <h1>HTML Cheat  Sheet</h1>
     <h2>a -Hyperlinks</h2>
     <p>Sirven para hacer un link de una página a otro recurso en la web,  sea otro archivo en el servidor web, u otra página web.</p>
@@ -80,11 +80,13 @@
     <p>Representa un grupo de ayudas introductorias o de navegación. Puede contener algunos elementos de encabezado, así como también un logo, un formulario de búsqueda, un nombre de autor y otros componentes.</p>
 
     <p>Por ejemplo: </p>
-    <header>Header</header>
+    <header class="header1">
+        <p>header</p>
+    </header>
     <style type="text/css">
-    header {
+    .header1 {
         background: #333;
-        color: white;
+        color: rgb(253, 253, 253);
         height: 80px;
         
         width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
