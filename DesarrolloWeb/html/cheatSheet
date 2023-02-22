@@ -81,6 +81,7 @@
 
     <p>Por ejemplo: </p>
     <header>Header</header>
+   
     
 
     <h2>Section</h2>
@@ -128,7 +129,7 @@
             .sneakers > p {
                 margin: 0.2rem;
                 font-size: 1rem;
-            } </style>
+            } </>
         </article>
     </article>
 
@@ -198,7 +199,7 @@ Mail: <input type="text" name="email" id="email" >
         <style type="text/css">
         table, td {
             border: 1px solid black;
-        } </style>
+        } </styl>
     </table>
 
 
