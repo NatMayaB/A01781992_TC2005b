@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<lang lang="en">
+<head class="headertittle">
+    <meta charset="utf-8">
+    <title>HTML Cheat Sheet</title> 
+</head>
+</lang>
+    <h1>HTML Cheat  Sheet</h1>
+    <h2>a -Hyperlinks</h2>
+    <p>Sirven para hacer un link de una página a otro recurso en la web,  sea otro archivo en el servidor web, u otra página web.</p>
+
+    <p>Por ejemplo: <a href="https://tinyurl.com/4wnrkkzx">El siguiente link muestra un video de c&oacute;mo funcionan los hyperlinks!</a></p>
+
+    <h2>p -Párrafos</h2>
+    <p>Sirven para  para distribuir el texto en párrafos.</p>
+
+    <p>Por ejemplo: Este es un ejemplo de párrafo.</p>
+
+    <h2>h1..h6 -Headers</h2>
+    <p>Se utiliza para definir los títulos de una página web.</p>
+    <p>Por ejemplo:</p>
+    <h1>This is heading1</h1>
+    <h2>This is heading 2</h2>
+    <h3>This is headig 3</h3>
+    <h4>This is heading 4</h4>
+    <h5>This is heading 5</h5>
+    <h6>This is heading 6</h6>
+
+    <h2>Div</h2>
+    <p>Secciona o agrupa etiquetas.</p>
+
+    <p>Por ejemplo:</p>
+    <div style="border: 5px dotted yellow;">
+        <p> Esto es un párrafo dentro de un div.</p>
+    </div>
+
+    <h2>Span</h2>
+    <p>Es un contenedor en línea. Sirve para aplicar estilo al texto o agrupar elementos en línea.</p>
+
+    <p>Por ejemplo:</p>
+    <span style="color: red;"> Esto es un span dentro de un párrafo.</span>
+
+    <h2>Strong</h2>
+    <p>Se utiliza para marcar con especial énfasis las partes más importantes de un texto.</p>
+
+    <p>Por ejemplo: </p>
+    <strong>Este es un ejemplo de strong.</strong>
+
+    <h2>i</h2>
+    <p>Se utiliza para colocar el texto en cursiva.</p>
+
+    <p>Por ejemplo: <i>Podemos observar nuestro texto en cursiva.</i></p>
+
+    <h2>u</h2>
+    <p>Se utiliza para subrayar texto.</p>
+
+    <p>Por ejemplo: <u>Este texto esta subrayado.</u></p>
+
+    <h2>b</h2>
+    <p>Se utiliza para colocar el texto en negritas.</p>
+
+    <p>Por ejemplo: <b>Este texto esta en negritas.</b></p>
+
+    <h2>strike</h2>
+    <p>Sirve para tachar texto.</p>
+
+    <p>Por ejemplo:<strike> Este texto esta tachado</strike></p>
+
+    <h2>small</h2>
+    <p>Sirve para hacer el tamaño del texto una talla más pequeña.</p>
+
+    <p>Por ejemplo:<small> Este texto esta pequeño.</small> </p>
+
+    <h2>em</h2>
+    <p>Se utiliza para marcar con énfasis las partes importantes de un texto.</p>
+
+    <p>Por ejemplo: Utilizamos la etiqueta em <em>aquí.</em> </p>
+
+    <h2>Header</h2>
+    <p>Representa un grupo de ayudas introductorias o de navegación. Puede contener algunos elementos de encabezado, así como también un logo, un formulario de búsqueda, un nombre de autor y otros componentes.</p>
+
+    <p>Por ejemplo: </p>
+    <header class="header1">
+        <p>header</p>
+    </header>
+    <style type="text/css">
+    .header1 {
+        background: #333;
+        color: rgb(253, 253, 253);
+        height: 80px;
+        
+        width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+        left: 0; /* Posicionamos la cabecera al lado izquierdo */
+        top: 0; /* Posicionamos la cabecera pegada arriba */
+        position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+    } </style>
+
+    <h2>Section</h2>
+    <p>Nos permite representar una sección genérica de un documento. Sirve para determinar qué contenido corresponde a qué parte de un esquema, es decir, su funcionalidad principal es estructurar semánticamente un documento.</p>
+
+    <p>Por ejemplo:</p>
+
+    <h2>Article</h2>
+    <p>Nos permite representar una composición auto-contenida en un documento, una página, una aplicación o en un sitio, que se quiere que sea distribuíble y/o reutilizable de manera independiente.</p>
+
+    <p>Por ejemplo:</p>
+    <article class="Sneakers1">
+        <h1>Sneakers collection</h1>
+        <article class="sneakers">
+            <h2>New balance 550</h2>
+            <p>New balance</p>
+        </article>
+        <article class="sneakers">
+            <h2>Adidas samba</h2>
+            <p>Adidas</p>
+        </article>
+        <article class="sneakers">
+            <h2>Converse chuck taylor</h2>
+            <p>Converse</p>
+            <style type="text/css">
+            .Sneakers1 {
+                margin: 0;
+                padding: 0.3rem;
+                background-color: #5cdb5860;
+                font: 1rem 'Fira Sans', sans-serif;
+            }
+            
+            .Sneakers1 > h1,
+            .sneakers {
+                margin: 0.5rem;
+                padding: 0.3rem;
+                font-size: 1.2rem;
+            }
+            
+            .sneakers {
+                background: right/contain content-box border-box no-repeat rgba(73, 116, 71, 0.151);
+            }
+            
+            .sneakers > h2,
+            .sneakers > p {
+                margin: 0.2rem;
+                font-size: 1rem;
+            } </style>
+        </article>
+    </article>
+
+    <h2>Aside</h2>
+    <p>Nos permite insertar una sección de una página que consiste en contenido que está indirectamente relacionado con el contenido principal del documento. Esta sección es a menudo representada como barras laterales o como inserciones</p>
+
+    <p>Por ejemplo: </p>
+
+    <h2>Footer</h2>
+    <p>Nos permite representar un pie de página para el contenido de una sección. Un pie de página típicamente contiene información acerca de el autor de la sección, datos de derechos de autor o enlaces a documentos relacionados.</p>
+
+    <p>Por ejemplo: </p>
+
+    <h2>Nav</h2>
+    <p>Nos permite insertar una sección de una página cuyo propósito es proporcionar enlaces de navegación, ya sea dentro del documento actual o a otros documentos.</p>
+
+    <p>Por ejemplo: </p>
+
+    <h2>Img</h2>
+    <p>Nos permite insertar una imagen en el documento.</p>
+
+    <p>Por ejemplo: </p>
+    <img src="nepal.jpg" alt="Image" height="200" width="340">
+
+    <h2>br</h2>
+    <p>Esta etiqueta produce un salto de línea en el texto.</p>
+
+    <p>Por ejemplo: </p>
+    <p>Aqui observamos un<br>salto de línea.</p>
+
+
+    <h2>hr</h2>
+    <p>Esta etiqueta nos permite insertar una línea horizontal.</p>
+
+    <p>Por ejemplo: <hr></p>
+
+    <h2>form</h2>
+    <p>Nos permite insertar una sección de documento que contiene controles interactivos que permiten a un usuario enviar información a un servidor web.</p>
+
+    <p>Por ejemplo:</p>
+    <h4>Suscríbete </h4>
+<form method="get">
+    
+Mail: <input type="text" name="email" id="email" >
+<br>
+<br>
+<input type="submit" value="Inscríbeme!">  <input type="reset">
+</form>
+
+    <h2>table</h2>
+    <p>Nos permite representar datos en dos o mas dimensiones.</p>
+
+    <p>Por ejemplo: </p>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+        </tr>
+        <tr>
+            <td>Natalia</td>
+            <td>Maya</td>
+        </tr>
+        <tr>
+            <td>Natalia</td>
+            <td>Maya</td>
+        </tr>  
+        <style type="text/css">
+        table, td {
+            border: 1px solid black;
+        } </styl>
+    </table>
+
+
+
+
+    <h2>ul</h2>
+    <p>Esta etiqueta nos permite  crear una lista no ordenada.</p>
+
+    <p>Por ejemplo:</p>
+    <ul>
+        <li>verde</li>
+        <li>rojo</li>
+        <li>azul</li>
+    </ul>
+
+    <h2>ol</h2>
+    <p>Esta etiqueta nos permite definir listas o viñetas ordenadas, bien con numeración o alfabéticamente.</p>
+
+    <p>Por ejemplo: </p>
+    <ol>
+        <li>Hamburguesa</li>
+        <li>Pasta</li>
+        <li>Boneless</li>
+    </ol>
+</body>
+</html>
