@@ -35,6 +35,10 @@ body, html {
 
 #grid-content {
     /* grid-area: content; */
-    grid-row: 2 / span 4;
+    grid-row: 2 / span 3;
     grid-column: 2;
+}
+
+#grid-footer {
+    grid-column: 1 / span 3;
 }
