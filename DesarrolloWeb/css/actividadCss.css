@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+body, html {
+    margin:0;
+    padding:0;
+}
+.grid-container {
+    padding: 10px;
+    height: 100vh;
+    background-color: #ddd;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.grid-item {
+    background-color: #8ed0da;
+    padding: 10px;
+}
+
+.grid-item:nth-child(even) {
+    background-color: #aedc7e; 
+}
