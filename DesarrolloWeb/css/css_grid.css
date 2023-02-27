@@ -1,12 +1,17 @@
+* {
+    box-sizing: border-box;
+}
 body, html {
     margin:0;
     padding:0;
 }
 .grid-container {
     padding: 10px;
+    height: 100vh;
     background-color: #ddd;
     display: grid;
-    grid-template-columns: repeat(3, 100px);
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
     gap: 10px;
 }
 .grid-item {
