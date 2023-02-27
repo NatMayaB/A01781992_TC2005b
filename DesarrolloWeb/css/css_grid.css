@@ -1,0 +1,17 @@
+body, html {
+    margin:0;
+    padding:0;
+}
+.grid-container {
+    padding: 10px;
+    background-color: #ddd;
+    display: grid;
+}
+.grid-item {
+    background-color: #62c8f0;
+    padding: 10px;
+    margin: 10px;
+}
+.grid-item: nth-child(even) {
+    background-color: #abddea; 
+}
