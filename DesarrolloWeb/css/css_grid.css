@@ -10,9 +10,15 @@ body, html {
     height: 100vh;
     background-color: #ddd;
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     gap: 10px;
+
+    grid-template-areas: 
+    "header header header" 
+    ". content ." 
+    ". content ." 
+    ". content .";
 }
 .grid-item {
     background-color: #62c8f0;
@@ -20,4 +26,12 @@ body, html {
 }
 .grid-item:nth-child(even) {
     background-color: #abddea; 
+}
+
+#grid-header {
+    grid-area: header;
+}
+
+#grid-content {
+    grid-area: content;
 }
