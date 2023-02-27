@@ -6,12 +6,13 @@ body, html {
     padding: 10px;
     background-color: #ddd;
     display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
 }
 .grid-item {
     background-color: #62c8f0;
     padding: 10px;
-    margin: 10px;
 }
-.grid-item: nth-child(even) {
+.grid-item:nth-child(even) {
     background-color: #abddea; 
 }
