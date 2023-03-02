@@ -7,7 +7,7 @@ body, html {
 }
 
 /* Container_1 */
-.grid-container {
+.grid-container_1 {
     padding: 5px;
     height: 100vh;
     background-color: #9f9e9e;
@@ -17,7 +17,7 @@ body, html {
     grid-gap: 10px; 
 }
 
-.grid-item {
+.grid-item_1 {
     background-color: #8ed0da;
     padding: 10px;
     border-radius: 5%;
@@ -26,7 +26,7 @@ body, html {
     display: flex;
 }
 
-.grid-item:nth-child(even) {
+.grid-item_1:nth-child(even) {
     background-color: #aedc7e; 
     padding: 10px;
     border-radius: 5%;
@@ -36,11 +36,75 @@ body, html {
 }
 
 /* Container_2 */
+.grid-container_2 {
+    padding: 5px;
+    height: 100vh;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;  
+}
+.grid-item_2 {
+    background-color: #eb8ccb;
+    padding: 10px;
+    border-radius: 5%;
+    font-size: 30px;
+    text-align: center;
+}
+.grid-item_2:nth-child(even) {
+    background-color: #e1b4d9; 
+    padding: 10px;
+    border-radius: 5%;
+    font-size: 30px;
+    text-align: center;
+}
+
+#grid-header {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#grid-it2 {
+    grid-row: 2 / 4;
+    grid-column: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#grid-it3 {
+    grid-row: 2 / 3;
+    grid-column: 2 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#grid-it4 {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#grid-it5 {
+    grid-row: 3 / 4;
+    grid-column: 3 / 4; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 
 /* Container_3 */
-.grid-container {
+.grid-container_3 {
     padding: 5px;
     height: 100vh;
     background-color: #9f9e9e;
@@ -50,14 +114,14 @@ body, html {
     grid-gap: 10px; 
 }
 
-.grid-item {
+.grid-item_3 {
     background-color: #78d4a9;;
     padding: 10px;
     border-radius: 5%;
     font-size: 30px;
     text-align: center;
 }
-.grid-item:nth-child(even) {
+.grid-item_3:nth-child(even) {
     background-color: #25ba61; 
     border-radius: 5%;
     font-size: 30px;
