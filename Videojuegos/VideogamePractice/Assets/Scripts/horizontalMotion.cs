@@ -22,6 +22,7 @@ public class horizontalMotion : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        move.x = 1;
         move.x = Input.GetAxis("Horizontal");
 
         //Debug.Log("X motion: " + move.x);
