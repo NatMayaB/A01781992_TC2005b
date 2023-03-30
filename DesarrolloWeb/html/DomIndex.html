@@ -2,11 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link type="text/css" rel="stylesheet" href="../css/eventos_dom.css">
-    <script type="module" src="../js/eventos_dom.js"></script>
+    <link type="text/css" rel="stylesheet" href="../html/eventos_dom.css">
+    <script type="module" src="../html/eventos_dom.js"></script>
     <title>Eventos y Dom</title>
 </head>
-
 <body>
     <h1>Eventos y DOM y ChatGPT</h1>
 
@@ -21,15 +20,24 @@
         <h3>Preguntas</h3>
         <ol>
             <li>¿Qué es el DOM?</li>
+            <p>El DOM (Document Object Model) es una representación en memoria de un documento HTML o XML que se carga en un navegador web. El DOM es una estructura de árbol que define cada elemento del documento como un objeto en el árbol, lo que permite a los desarrolladores web acceder y manipular los elementos y sus atributos mediante lenguajes de programación como JavaScript. Según Copilot.</p>
             <li>¿Qué es un nodo?</li>
+            <p>Un nodo es un objeto dentro del DOM que representa un elemento, atributo o texto en un documento HTML o XML. Según ChatGPT.</p>
             <li>¿Cómo se accede a un elemento del DOM?</li>
+            <p>Para acceder a un elemento del Document Object Model (DOM) en JavaScript, se puede utilizar el método document.getElementById() si el elemento que se desea acceder tiene un atributo de id definido en el HTML.Por ejemplo: si el HTML tiene un elemento '<div>' con un atributo id de "miDiv", se puede acceder a ese elemento en JavaScript de la siguiente manera: var elemento = document.getElementById("miDiv"); Según Copilot.</p>
             <li>¿Cómo se modifica un elemento del DOM?</li>
+            <p>Para modificar un elemento del DOM en JavaScript, se pueden utilizar varias propiedades y métodos del objeto DOM. Algunos ejemplos son: elemento.innerHTML para cambiar el contenido HTML de un elemento, elemento.style para cambiar los estilos CSS de un elemento, elemento.setAttribute() para establecer el valor de un atributo de un elemento y elemento.classList para agregar, eliminar o cambiar clases CSS en un elemento.  
             <li>¿Cuál es la diferencia entre getElementby* y querySelector*?</li>
+            <p>La diferencia entre getElementby* y querySelector* es que los métodos getElementby* obtienen elementos del DOM por su ID, etiqueta o clase, mientras que los métodos querySelector* permiten obtener elementos del DOM utilizando selectores de CSS. Según ChatGPT.</p>
             <li>¿Qué es un evento?</li>
+            <p> Es una acción que se produce en un elemento del DOM, como hacer clic en un botón, mover el ratón sobre un elemento, pulsar una tecla, etc. Según Copilot.</p>
             <li>¿Qué es un listener?</li>
+            <p>es una función que se utiliza para "escuchar" o detectar eventos en los elementos del DOM y realizar una acción en respuesta a ese evento. Para agregar un listener a un elemento del DOM, se puede utilizar el método addEventListener(). Según Copilot.</p>
             <li>¿Qué es un callback?</li>
-            <li>¿Qué es un objeto de evento?</li>
-        </ol>        
+            <p>Es una función que se pasa como argumento a otra función y que se ejecuta cuando se completa una operación asincrónica. En el contexto de los listeners, un callback se utiliza para definir la acción que se realizará cuando se produzca un evento en un elemento del DOM. Según ChatGPT.</p>
+            <li>¿Qué es un objeto de evento?</li>       
+            <p>es un objeto que se crea automáticamente cuando se produce un evento en un elemento del DOM. El objeto de evento contiene información sobre el evento, como la posición del ratón, las teclas pulsadas, etc. Los objetos de evento se pasan como argumentos a las funciones de los listeners para que puedan acceder a esta información. Según Copilot.</p>
+        </ol>
     </div>
 
     <h3>Ejercicios de código</h3>
@@ -40,14 +48,49 @@
         <p id="mousePosition">Posición del mouse: </p>
     </div>
 
+    <script>
+    // Seleccionar el elemento con el ID "mousePosition"
+        var mousePosition = document.getElementById("mousePosition");
+    // Agregar un listener al documento que detecte el evento "mousemove"
+        document.addEventListener("mousemove", function(event) {
+          // Obtener las coordenadas del mouse en la página
+            var x = event.pageX;
+            var y = event.pageY;
+
+    // Actualizar el contenido del elemento con las coordenadas del mouse
+            mousePosition.innerHTML = "Posición del mouse: " + x + ", " + y;
+        });
+    </script>
+
     <div class="container">
         <p>2. Al dar click al siguiente botón, obtén el nombre y apellido de las siguientes cajas de texto, y agrega, después del botón, un elemento que tenga el nombre completo.</p>
         <form id="form1">
-            First name: <input id="form-fname" type="text" name="fname" ><br>
-            Last name: <input id="form-lname" type="text" name="lname" ><br><br>
-        <input id="form1-submit" type="submit" value="Submit">
+            First name: <input id="form-fname" type="text" name="fname"><br>
+            Last name: <input id="form-lname" type="text" name="lname"><br><br>
+            <input id="form1-submit" type="button" value="Submit">
         </form>
     </div>
+    <script>
+    // Seleccionar los elementos relevantes del DOM
+        var submitButton = document.getElementById("form1-submit");
+        var firstNameInput = document.getElementById("form-fname");
+        var lastNameInput = document.getElementById("form-lname");
+    
+    // Agregar un listener al botón que detecte el evento "click" y llame a una función
+        submitButton.addEventListener("click", function(event) {
+            event.preventDefault(); // Evitar que el formulario se envíe
+    // Obtener los valores de las cajas de texto
+            var firstName = firstNameInput.value;
+            var lastName = lastNameInput.value;
+
+    // Crear un nuevo elemento con el nombre completo
+            var fullName = document.createElement("p");
+            fullName.innerHTML = "Nombre completo: " + firstName + " " + lastName;
+
+    // Agregar el nuevo elemento después del botón
+            submitButton.parentNode.insertBefore(fullName, submitButton.nextSibling);
+        });
+    </script>
 
     <div class="container">
         <p>3. Agrega el código para agregar una fila, o una columna, a la siguiente tabla al dar click al botón correspondiente.</p>
@@ -60,7 +103,8 @@
                 <td>Row 2 column 1</td>
                 <td>Row 2 column 2</td>
             </tr>
-        </table><br>
+        </table>
+        <br>
         <input id="btn-insert-r" type="button" value="Insert row">
         <input id="btn-insert-c" type="button" value="Insert column">
     </div>
@@ -83,21 +127,25 @@
                 <td>Row3 cell2</td>
                 <td>Row3 cell3</td>
             </tr>
-            </table><form><br>
+        </table>
+        <form>
+            <br>
             <input id="rowIndex" type="text" placeholder="Row Index">
             <input id="colIndex" type="text" placeholder="Col Index">
             <input id="newValue" type="text" placeholder="New Value">
             <input id="btn-change" type="button" value="Change content">
+        </form>
     </div>
+    
 
     <div class="container">
         <p>5. Agrega el código para quitar o agregar elementos a la lista de opciones. Los colores pueden ser aleatorios.</p>
         <form>
             <select id="colorSelect">
-                <option>Red</option>
-                <option>Green</option>
-                <option>White</option>
-                <option>Black</option>
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="white">White</option>
+                <option value="black">Black</option>
             </select>
             <input id="btn-add-color" type="button" value="Add color">
             <input id="btn-rmv-color" type="button" value="Remove color">
@@ -109,14 +157,33 @@
         <img id="imagenGato" src="http://placekitten.com/200/300">
     </div>
 
-    <div class="container">
+    <script>
+        const imagenGato = document.getElementById("imagenGato");
+        imagenGato.addEventListener("mouseenter", () => {
+            const ancho = Math.floor(Math.random() * 301) + 300;
+            const alto = Math.floor(Math.random() * 301) + 300;
+            const nuevaImagen = document.createElement("img");
+            nuevaImagen.src = `http://placekitten.com/${ancho}/${alto}`;
+            imagenGato.parentNode.replaceChild(nuevaImagen, imagenGato);
+        });
+    </script>
+
         <h2>Conclusiones</h2>
 
         <h4>Experiencia general</h4>
+        Mi exprencia general con ambos es que tienen bastante que ofrecer y que ambos tienen sus ventajas y desventajas, son herramientas que si o si debemos de aprender a utilizar, y me refiero a aprender a usarlas no a depender de ellas.
         <h4>¿Cuándo y para qué usarías ChatGPT y cuándo Copilot?</h4>
-        <h4>Ventajas de usar AI para programar</h4>
+        En mi experiencia ChatGPT ya lo utilizaba desde hace tiempo y me parece una herramienta que me saca de apuros, en el único "problema" que observó es que para que ChatGPT te pueda dar una respuesta acertada y precisa necesita contexto acerca de lo que estas preguntando, y en cuento a Copilot a mi en lo personal no me funciono al 100% y tuvo que desinstalarlo e instalarlo varias veces cosa que me parece molesta, y siento que su fuerte es la programación pura, porque cuando le preguntas cosas que son de redactar rellena nada más la información o no contesta tan precisamente como Chat GPT.
+        <h4>Ventajas de usar AI para programar.</h4>
+        <li>Reduce los tiempos que se utilizan para programar.</li>
+        <li>Puede identificar errores en el código rapidámente.</li>
+        <li>Puede sugerir una mejor optimización del código.</li>
+        <li>Nos puede explicar un código ajeno detalle a detalle.</li>
         <h4>Desventajas de usar AI para programar</h4>
+        <li>Vuelve flojos a los programadores.</li>
+        <li>Puede volverse una dependencia.</li>
+        <li>No te puede dar una respuesta específica a tu problema, solo una sugerencia.</li>
+        <li>Muchhas veces mete código de relleno para poder completarlo.</li>
     </div>
-
 </body>
 </html>
